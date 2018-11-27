@@ -7,11 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 
 class Tab1Spending : Fragment(){
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView = inflater.inflate(R.layout.tab1_spending, container, false)
-        return rootView
+        return inflater.inflate(R.layout.tab1_spending, container, false)
     }
 }

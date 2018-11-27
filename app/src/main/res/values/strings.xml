@@ -1,15 +1,30 @@
 <resources>
     <string name="app_name">Budget Tracker</string>
     <string name="tab_text_1">Spending</string>
-    <string name="spending_text">Enter your spending details here</string>
+    <string name="spending_text">Enter your spending details below</string>
 
     <string name="tab_text_2">Receipts</string>
-    <string name="receipts_text">Enter your receipts here</string>
+    <string name="receipts_text">Tap the camera button to import a receipt</string>
 
     <string name="tab_text_3">History</string>
-    <string name="history_text">Here are your transactions</string>
+    <string name="history_text">Here is your transaction history</string>
 
     <string name="action_settings">Settings</string>
     <string name="expense_text">Expense</string>
     <string name="expense_amount">Amount</string>
+
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
 </resources>

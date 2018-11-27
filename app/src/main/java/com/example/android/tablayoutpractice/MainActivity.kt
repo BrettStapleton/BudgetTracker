@@ -1,20 +1,18 @@
 package com.example.android.tablayoutpractice
 
 import android.support.design.widget.TabLayout
-import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.Menu
-import android.view.MenuItem
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.tab3_history.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,14 +40,7 @@ class MainActivity : AppCompatActivity() {
 
         container.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabs))
         tabs.addOnTabSelectedListener(TabLayout.ViewPagerOnTabSelectedListener(container))
-
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
-
     }
-
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -78,18 +69,15 @@ class MainActivity : AppCompatActivity() {
     inner class SectionsPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
         override fun getItem(position: Int): Fragment {
-            when (position){
+            return when (position){
                 0 -> {
-                    val tab1 = Tab1Spending()
-                    return tab1
+                    Tab1Spending()
                 }
                 1 -> {
-                    val tab2 = Tab2Receipts()
-                    return tab2
+                    Tab2Receipts()
                 }
                 else -> {
-                    val tab3 = Tab3History()
-                    return tab3
+                    Tab3History()
                 }
             }
         }

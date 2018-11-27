@@ -7,11 +7,112 @@
                                              android:layout_height="match_parent"
                                              tools:context=".MainActivity$PlaceholderFragment">
 
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/expenseInput9"
+            android:hint="@string/expense_text"
+            android:importantForAutofill="no"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/expenseInput7"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/amountInput9"
+            android:hint="@string/expense_amount"
+            android:autofillHints=""
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintBaseline_toBaselineOf="@+id/expenseInput9"
+            app:layout_constraintStart_toEndOf="@+id/expenseInput9" android:layout_marginStart="8dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/expenseInput4"
+            android:hint="@string/expense_text"
+            android:importantForAutofill="no"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/amountInput4"
+            android:hint="@string/expense_amount"
+            android:autofillHints=""
+            app:layout_constraintBaseline_toBaselineOf="@+id/expenseInput4" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/expenseInput4"
+            android:layout_marginStart="8dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/amountInput5"
+            android:hint="@string/expense_amount"
+            android:autofillHints=""
+            app:layout_constraintBaseline_toBaselineOf="@+id/expenseInput6" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/expenseInput6"
+            android:layout_marginStart="8dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/expenseInput6"
+            android:hint="@string/expense_text"
+            android:importantForAutofill="no" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/expenseInput4"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/expenseInput7"
+            android:hint="@string/expense_text"
+            android:importantForAutofill="no"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/expenseInput6"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/amountInput6"
+            android:hint="@string/expense_amount"
+            android:autofillHints=""
+            app:layout_constraintBaseline_toBaselineOf="@+id/expenseInput7" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/expenseInput7"
+            android:layout_marginStart="8dp"/>
     <TextView
             android:text="@string/history_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent" android:id="@+id/history" android:textSize="18sp"
-            android:textColor="@android:color/background_dark"/>
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintStart_toEndOf="@+id/months_spinner" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+    <Spinner
+            android:layout_width="63dp"
+            android:layout_height="30dp"
+            android:id="@+id/months_spinner" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:entries="@array/months_array"/>
+    <TextView
+            android:text="November"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" android:textSize="18sp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/months_spinner"/>
 </android.support.constraint.ConstraintLayout>
